@@ -2,7 +2,7 @@
 
 1줄 요약 : emplace_back을 쓰되, 암시적 호출이 될 지 한 번 더 생각하자.
 
-```cpp
+```c++
 std::vector<Cat> catVec;
 
 // 참고 : Cat은 int를 생성자로 받을 수 있다.
