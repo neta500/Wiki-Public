@@ -23,5 +23,5 @@ std::vector<std::unique_ptr<Cat>> catPtrVec;
 catPtrVec.push_back(std::addressof(cat1));
 catPtrVec.emplace_back(std::addressof(cat1)); // cat1은 스택 변수이기 때문에 unique_ptr가 소멸되면서 삭제 요청 시 heap runtime error가 발생한다.
 
-auto catPtr = std::make_unique<Cat>(13);
+auto catPtr = std::make_unique<Cat>(13); // 정상적인 unique_ptr 생성 및 해제
 ```
